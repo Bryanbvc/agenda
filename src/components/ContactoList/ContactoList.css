@@ -1,0 +1,46 @@
+/* src/components/ContactoList/ContactoList.css */
+
+/* ── Estado cargando / vacío ── */
+.contacto-list-estado {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6c757d;
+}
+
+.contacto-list-vacio {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.8;
+}
+
+.contacto-list-vacio span {
+  font-size: 0.875rem;
+}
+
+/* ── Contador ── */
+.contacto-list-contador {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* ── Grilla responsive ── */
+/* 3 columnas en pantalla grande, 2 en tablet, 1 en móvil */
+.contacto-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+@media (max-width: 991px) {
+  .contacto-list-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .contacto-list-grid {
+    grid-template-columns: 1fr;
+  }
+}
